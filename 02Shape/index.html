@@ -10,12 +10,34 @@
   <body>
     <a-scene background="color: #333333">
       <a-box id="myBox"
-        width="3"
+        width="5"
         height="2"
-        depth="1"
-        color="#BBAA33" 
+        depth="4"
+        color="#4444ff"
+        position="0 2 -8"
+        rotation="45"
+        scale="0.6"
         shadow>
       </a-box>
+      <a-plane color="#dddd55" 
+        height="100" 
+        width="100"
+        rotation="-90 0 0">
+      </a-plane>
+      <a-ring color="purple" 
+        radius-inner="10" 
+        radius-outer="12"
+        position="0 2 -10">
+      </a-ring>
+      <a-torus-knot color="#22aa22" 
+        arc="180" 
+        p="2" 
+        q="7" 
+        radius="5" 
+        radius-tubular="0.1"
+        position="0 10 1">
+      </a-torus-knot>
+    
     </a-scene>
   </body>
 </html>
